@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navegacao from './componentes/Navegacao';
 import PaginaRestaurante from './componentes/Pagina/PaginaRestaurante';
 import PaginaPedido from './componentes/Pagina/PaginaPedido';
@@ -9,13 +9,14 @@ function App() {
     <Router>
       <div>
         <Navegacao />
-        <Switch>
-          <Route path="/restaurante" component={PaginaRestaurante} />
-          <Route path="/pedido" component={PaginaPedido} />
-        </Switch>
+        <Routes>
+          <Route path="/restaurante" element={<PaginaRestaurante />} />
+          <Route path="/pedido" element={<PaginaPedido />} />
+        </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;

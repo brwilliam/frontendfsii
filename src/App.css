@@ -11,6 +11,6 @@
   border: 1px solid #343a40; /* Cor da borda cinza escuro */
   border-radius: 5px;
   background-color: #a8a7a7; /* Cor de fundo branca */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra suave */
   
 }
