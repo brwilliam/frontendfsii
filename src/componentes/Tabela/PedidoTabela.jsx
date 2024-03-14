@@ -16,28 +16,30 @@ function PedidoTabela() {
   }, []);
 
   return (
-    <div>
-      <h2>Lista de Pedidos</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Data do Pedido</th>
-            <th>Valor Total</th>
-            <th>ID do Restaurante</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pedidos.map(pedido => (
-            <tr key={pedido.IDPedido}>
-              <td>{pedido.IDPedido}</td>
-              <td>{pedido.DataPedido}</td>
-              <td>{pedido.ValorTotal}</td>
-              <td>{pedido.IDRestaurante}</td>
+    <div className="d-flex justify-content-center">
+      <div>
+        <h2 className="text-center">Lista de Pedidos</h2>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Data do Pedido</th>
+              <th>Valor Total</th>
+              <th>ID do Restaurante</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {pedidos.map(pedido => (
+              <tr key={pedido.IDPedido}>
+                <td>{pedido.IDPedido}</td>
+                <td>{pedido.DataPedido}</td>
+                <td>{pedido.ValorTotal}</td>
+                <td>{pedido.IDRestaurante}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

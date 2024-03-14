@@ -8,7 +8,7 @@ function PaginaRestaurante() {
     <div className="container">
       <h1>Cadastro de Restaurante</h1>
       <RestauranteForm />
-      <h2>Restaurantes Cadastrados</h2>
+      
       <RestauranteTabela />
     </div>
   );

@@ -8,7 +8,7 @@ function PaginaPedido() {
     <div className="container"> {/* Aplique a classe container */}
       <h1>Cadastro de Pedido</h1>
       <PedidoForm />
-      <h2>Pedidos Registrados</h2>
+
       <PedidoTabela />
     </div>
   );

@@ -14,3 +14,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra suave */
   
 }
+
+
+.underline {
+  border-bottom: 2px solid #ffffff; /* Cor do sublinhado */
+  width: 100%; /* Largura igual ao texto */
+  position: absolute; /* Posição absoluta para se sobrepor ao texto */
+  bottom: -5px; /* Posição para sublinhar abaixo do texto */
+}

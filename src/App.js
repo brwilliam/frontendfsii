@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navegacao from './componentes/Navegacao';
+import Navegacao from './componentes/Navegacao/Navegacao';
 import PaginaRestaurante from './componentes/Pagina/PaginaRestaurante';
 import PaginaPedido from './componentes/Pagina/PaginaPedido';
 
@@ -17,6 +17,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
